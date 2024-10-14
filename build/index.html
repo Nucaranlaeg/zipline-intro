@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="./_app/immutable/assets/2.CtmZSkK9.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.D9qwv_Qy.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/entry.BS3o1sQk.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/runtime.CL2T5sGH.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.PK9LHDSb.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/render.NOOskAEa.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/disclose-version.BiUaKtt4.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index-client.021jSvij.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.omo3jxXE.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/2.Bg2NloQ5.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/lifecycle.DrzSAoBa.js">
+	</head>
+	<body data-sveltekit-preload-data="hover" style="background-color: #4f5050;">
+		<div style="display: contents"><!--[--><!--[--><!----><!----><div id="dag-wrapper" class="svelte-1g1gx9t"><canvas height="600" width="800" class="svelte-j6tqjt"></canvas> <div id="elements" class="svelte-j6tqjt"><div id="elements-inner" class="svelte-j6tqjt"><!--[--><!--]--></div></div> <div id="view-control-wrapper" class="svelte-oj9z4e"><div class="control-button invisible svelte-oj9z4e"></div> <button aria-label="Scroll up" class="control-button svelte-oj9z4e"><i class="fa fa-caret-up svelte-oj9z4e"></i></button> <button aria-label="Zoom in" class="control-button svelte-oj9z4e"><i class="fa fa-magnifying-glass-plus svelte-oj9z4e"></i></button> <button aria-label="Scroll left" class="control-button svelte-oj9z4e"><i class="fa fa-caret-left svelte-oj9z4e"></i></button> <button aria-label="Reset scroll" class="control-button svelte-oj9z4e"><i class="fa fa-circle-dot svelte-oj9z4e"></i></button> <button aria-label="Scroll right" class="control-button svelte-oj9z4e"><i class="fa fa-caret-right svelte-oj9z4e"></i></button> <div class="control-button invisible svelte-oj9z4e"></div> <button aria-label="Scroll down" class="control-button svelte-oj9z4e"><i class="fa fa-caret-down svelte-oj9z4e"></i></button> <button aria-label="Zoom out" class="control-button svelte-oj9z4e"><i class="fa fa-magnifying-glass-minus svelte-oj9z4e"></i></button></div><!----> <div id="max-depth-wrapper" class="svelte-13kjus7"><input type="text" inputmode="numeric" name="max-depth-input" value="0" class="svelte-13kjus7"> <label for="max-depth-input">Max Depth</label></div><!----><!----> <div id="search-box-wrapper" class="svelte-1g1gx9t"><div class="search-box autocomplete select is-fullwidth sautocomplete-592 svelte-75ckfb hide-arrow show-clear"><select class="svelte-75ckfb"><!--[!--><!--[!--><!--]--><!--]--></select> <div class="input-container svelte-75ckfb"><!--[!--><!--]--> <input type="text" class=" input autocomplete-input svelte-75ckfb" id="" autocomplete="off" tabindex="0"> <!--[--><span class="autocomplete-clear-button svelte-75ckfb"><!---->&#10006;<!----></span><!--]--></div> <div class=" autocomplete-list hidden is-fullwidth svelte-75ckfb"><!--[!--><!--[!--><!--[!--><!--[--><div class="autocomplete-list-item-no-results svelte-75ckfb"><!---->No results found<!----></div><!--]--><!--]--><!--]--><!--]--></div></div><!----></div></div> <div id="node-info-box-wrapper" class="svelte-1g1gx9t"><!--[!--><!--]--><!----></div> <h2>Potential improvements:</h2> <i>Not done due to timeframe.</i> <ul style="max-width: 750px"><li>The list of names in the autocomplete could be fetched once, then not updated.  This would require using the name as the selected item rather than the item itself, which is why I didn't get around to it.</li> <li>Calculating the tree relations could be improved using an object (which hashes properties), but that is overkill if we're not talking about a significant number of nodes.</li> <li>Node ordering could be improved - in the example graph, either G should be moved above E and F or E and F should be swapped (shorter lines and better grouping is preferable).</li> <li>Clarity is needed on maximum depth: if the graph is unfiltered, it's unclear if it should have an effect because of the potential of splitting it into multiple graphs.</li> <li>The infobox on the right should have a button to filter to only parents of that node.</li> <li>Node types should probably be indicated visually on the graph - each box could be shaped differently, for instance.  This is dependent on whether there is a hard limit on node types.</li> <li>Clicking and dragging on the graph / background should scroll.</li> <li>When filtered to a node, the children of that node should be accessible in some way (so that the graph can be navigated).</li> <li>Arrows could be added to lines to indicate direction of relations.  It's not clear whether this is needed (as it can only go one way) but it might be nice.</li> <li>Relations which span multiple columns should attempt to avoid going under other nodes.</li></ul><!----><!----><!----><!--]--> <!--[!--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_xf0ymv = {
+						base: new URL(".", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("./_app/immutable/entry/start.D9qwv_Qy.js"),
+						import("./_app/immutable/entry/app.PK9LHDSb.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
